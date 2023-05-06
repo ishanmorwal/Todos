@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Silkscreen&family=Sofia+Sans+Condensed:wght@600&display=swap');
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    transition:0.4s;
+
+}
+
+
+.title-font{
+    font-family:Silkscreen,Verdana;
+    font-style:oblique;
+    filter:hue-rotate(20deg);
+    color:white;
+    
+}
+.title-font:hover{
+    animation:colr 0.1s  infinite;
+}
+
+@keyframes colr{
+    from{
+        filter:hue-rotate(20deg);
+    }
+    50%{
+        filter:hue-rotate(40deg);
+    }
+    75%{
+        filter:hue-rotate(60deg);
+    }
+    100%{
+        filter:hue-roate(20deg);
+    }
+}
